@@ -1,0 +1,301 @@
+* NUM	NAM	COM	LAT_D	LAT_M	LAT_S	LON_D	LON_M	LON_S	COD	ALT	FRE	RW_D	RW_H	RW_L	RW_S	RW_W	ICAO	COM_12	STX_NAM
+*
+* ==============================================================================
+*
+* Filename "wsc_16.stx" created Monday, 11 April 2016 at 03:45 GMT
+* Worldwide Soaring Turnpoint Exchange format version 0.5.2
+*
+* Lines starting with a * are comments and are ignored by programs using this file
+* Lines starting with a $ are definitions of parameters available to programs using this file
+* The first line that is neither a comment nor a definition contains the definitions
+*     of the contents of the columns that follow
+* All other lines are waypoint definitions
+* The line containing the column definitions can be placed anywhere before the first waypoint.
+*   It is placed as a comment at the top of this file for convenience in using this file
+*   with a spreadsheet program, where the first line can be placed in a separate window
+*   to label the columns as you scroll down.
+* The columns are separated by the "tab" character
+*
+* The specification of the .STX file format is available at
+*    http://soaringweb.org/TP/stx_specification.html
+*
+* This is a 'beta' release to support the release of the NK ClearNav and is subject to change.
+*
+* ==============================================================================
+*
+* Starting the definition of various parameters for the file
+*
+$STX_VERSION	0.5.2
+* NUM	NAM	COM	LAT_DD	LONG_DD	COD	ALT	FRE	RW_D	RW_H	RW_L	RW_S	RW_W	ICAO	COM_12
+$CD	Y
+* NAME_NUMBER: N
+$IF_SSA_AIRSPACE	N
+$HOME	Williams Soaring Center, California
+$URL_INFORMATION	www.valleysoaring.net/ the Valley Soaring Association
+$SKIP_WAYPOINT_MODE_CHANGES	Y
+$CAI_NUMBER_FIRST_PAD	No
+$NDB_NUMBER_FIRST_PAD	No
+$CAI_TITLE	Williams 2016a
+$TIMEZONE_NAME	US/Pacific
+$CONTRIBUTOR	Jim Darke
+$CONTRIBUTOR'S_E-MAIL	jdarke@comcast.net
+$STATE	California
+$STATE_ABBREV	CA
+$LATITUDE	North
+$LONGITUDE	West
+$COUNTRY	US
+$FILENAME_3	ws6
+$FILENAME_4	wsc6
+$FILENAME_5	wsc16
+$FILENAME_8	wsc_16
+$MODIFICATIONS	10 Mar 03:  Original contribution
+$MODIFICATIONS	12 Mar 03:  StonyEast-E9, AntlpVly - R3, zFarnswor-Rx, BuroGap-E4, and zButteCrk-Rx changed from Airport to Landing.  Landing added to Hi-Valley-E3.  Release changed to 303b
+$MODIFICATIONS	08 Mar 04: All new data for WSC only
+$MODIFICATIONS	02 Apr 04: Names corrected for 7M Ranch and 3 Sisters.
+$MODIFICATIONS	06 Apr 04: Turnpoint and Landing Site collections combined.
+$MODIFICATIONS	07 Apr 04: Names reverted to fully compressed.
+$MODIFICATIONS	08 Apr 04: Diamond M added.  7M Ranch moved.
+$MODIFICATIONS	13 Apr 04: Bessa Dam moved. Buckhorn and Gerber added.
+$MODIFICATIONS	13 Feb 07: Version 07c. All new data, many changes.  Filenames end in 7c.
+$MODIFICATIONS	16 Feb 07: WSC frequency changed
+$MODIFICATION	03 Apr 07:  "A"irport attribute removed from all but WSC.
+$MODIFICATIONS	14 Apr 10: Dunsmuir, Duzel, Guinda, LongbllRc, ScottVall, Tennant S, ThreeShds, Triple R Rc, and Weed added.
+$MODIFICATIONS	02 Mar 12: DblCrek-CN42 added.   DeerCrk-h-E3, and Jones-R5 moved.   Dunsmuir, Duzel, FallRiver-R5, LongbllRc, Or7NE-E6, ScottVall, Tennant S, ThreeShds, Triple R Rc, and Weed removed.   AcreWood-R3 renamed Jonsen-4CA7and LakeC-R3 renamed Lake 68 CA-R, courtesy of Peter Kelly.
+$MODIFICATIONS	04 Mar 12: Magnetic variation changed.
+$MODIFICATIONS	10 Mar 12: Elevations corrected.
+$MODIFICATIONS	14 Apr 14: Montgomery added and control points renumbered.
+$MODIFICATIONS	05 Oct 14: Ilec airspace file updated with AirParse Version 2.5
+$ALTITUDE_UNIT	Feet
+$HEADER	Names: TP Names are alphabetical with WSC (the home base) listed first with a numeric one preceding the name WSC.  ICAO ID may be included in name.
+$HEADER	Elevations: Many elevations are rounded
+$HEADER	Classification of each TP is included at the end of each name.  Letter at end will be either: R, E, or U:
+$HEADER	  R = Runway on sectional
+$HEADER	  E = Emergency Landing area
+$HEADER	  U = Unlandable area
+$HEADER	  After the letter is a qualification number: 1, 2, or 3 is good,    7, 8, or 9 is bad.
+$HEADER	Comments at end of line may include:
+$HEADER	  Runway:
+$HEADER	    Length in hundreds ( H for Hard or S for Soft surface) e.g."20H" means 2000 ft hard surface
+$HEADER	    Surface: H=Hard (concrete/ asphalt/paved)    S=Soft (gravel, sod or dirt)
+$HEADER	    Width may be shown after length  e.g. "25Hx90" 2500 long x 90 ft wide.  Width sometimes is only the paved area, but other times it estimates width  and it may contain obstructions
+$HEADER	    Direction: e.g. 14/32, N/S, 16/34
+$HEADER	  Radio frequency: 22.9=122.9   22.7=122.7
+$HEADER	  Aviation Weather: AW24.5=124.5
+$HEADER	  Control Tower: CT18.7=118.7
+$HEADER	Notice about Landing Sites:   INFO MAY NOT BE ACCURATE
+$HEADER	Choice of landing sites is a pilot's personal responsibility.
+$HEADER	The landing attribute "L" has been appended to a few of the control points that MAY have been landable in the past, but they may not be landable any longer.
+$HEADER	Pilots must decide for themselves which control points may be landable for them, and then add or delete attributes as appropriate.
+* skip the automaticly generated note about the contents of the comment 
+$CAI_COM_DEF	Skip
+$CAI_HEADER	Names:TP Names are alphabetical with WSC (the home base) listed first with
+$CAI_HEADER	a numeric one preceding the name WSC
+$CAI_HEADER	ICAO ID may be included in name   Elevations: Many Elevations are rounded
+$CAI_HEADER	Classification of each TP is included at the end of each name:
+$CAI_HEADER	Letter at end will be either: R , E, or U.    - R = Runway on sectional,
+$CAI_HEADER	- E = Emergency Landing area,      - U = Unlandable area
+$CAI_HEADER	After the letter is a qualification number:
+$CAI_HEADER	1, 2, or 3 is good,           7, 8, or 9 is bad.
+$CAI_HEADER	Comments at end of line may include:
+$CAI_HEADER	Runway size:    Length in hundreds     ( H for Hard or S for Soft surface)
+$CAI_HEADER	e.g      "20H" means 2000 ft hard surface
+$CAI_HEADER	Width may be shown after length  e.g. "25Hx90" 2500 long x 90 ft wide
+$CAI_HEADER	Width sometimes is only the paved area, but other times it
+$CAI_HEADER	estimates width  and it may contain obstructions
+$CAI_HEADER	Type of runway surface:
+$CAI_HEADER	H=Hard (concrete/ asphalt/paved)    S=Soft (gravel, sod or dirt)
+$CAI_HEADER	Runway direction e.g. 14/32, N/S, 16/34
+$CAI_HEADER	Radio frequency examples 22.9=122.9   22.7=122.7
+$CAI_HEADER	Aviation Weather = AW24.5=124.5   Control Tower CT18.7=118.7
+$CAI_HEADER	Notice about Landing Sites :   INFO MAY NOT BE ACCURATE
+$CAI_HEADER	Choice of landing sites is a pilot's personal responsibility.
+$CAI_HEADER	The Landing Attribute "L" has been amended to a few of the control points that
+$CAI_HEADER	MAY have been landable in the past, but they may not be landable any longer.
+$CAI_HEADER	---
+$CAI_HEADER	Pilots must decide for themselves which control points may be landable for
+$CAI_HEADER	them, and then add or delete attributes as appropriate.
+$LONGITUDE	W
+$LATITUDE	N
+* 39	09.800	122	07.900	68	HTASFP	1WSC  -R1	25HX90W 16/34 23.3	Williams	CN12	Williams				CN12	16E	16/34		160	2500	A	40	California	CA	916-473-5600
+* 40	02.331	122	51.844	8000	T	YolaPk-U8   	25 SM Toranchoteh	YLP	YLPK	YLPK8	YolPk8	YolaPkU8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPkU
+* Magnetic_Variation: 15.3E
+* 39.402 => 39:24: 7.200
+* -122,4997 => 122:29:58.920
+$MODIFICATIONS	01 Apr 16: Guinda-E9, HHWtr-R4, and Mysterios-R9 moved.   MCC ClasC removed.   Many changes in codes and comments.   Magnetic Variation added.
+$MODIFICATIONS	08 Apr 16: Quality added to Noltas.
+$MAGNETIC_VARIATION	14.6E
+* ==============================================================================
+*
+* Filename "wsc_16.stx" created Monday, 11 April 2016 at 03:45 GMT
+* Worldwide Soaring Turnpoint Exchange format version 0.5.2
+*
+* Lines starting with a * are comments and are ignored by programs using this file
+* Lines starting with a $ are definitions of parameters available to programs using this file
+* The first line that is neither a comment nor a definition contains the definitions
+*     of the contents of the columns that follow
+* All other lines are waypoint definitions
+* The line containing the column definitions can be placed anywhere before the first waypoint.
+*   It is placed as a comment at the top of this file for convenience in using this file
+*   with a spreadsheet program, where the first line can be placed in a separate window
+*   to label the columns as you scroll down.
+* The columns are separated by the "tab" character
+*
+* The specification of the .STX file format is available at
+*    http://soaringweb.org/TP/stx_specification.html
+*
+* This is a 'beta' release to support the release of the NK ClearNav and is subject to change.
+*
+* ==============================================================================
+*
+* Starting the definition of various parameters for the file
+*
+$STX_VERSION	0.5.2
+$IF_SSA_AIRSPACE	N
+$HOME	Williams Soaring Center, California
+$CAI_NUMBER_FIRST_PAD	No
+$NDB_NUMBER_FIRST_PAD	No
+$TIMEZONE_NAME	US/Pacific
+$CONTRIBUTOR	Jim Darke
+$CONTRIBUTOR'S_E-MAIL	jdarke@comcast.net
+$STATE_ABBREV	CA
+$LATITUDE	North
+$LONGITUDE	West
+$COUNTRY	US
+$ALTITUDE_UNIT	Feet
+$LONGITUDE	W
+$LATITUDE	N
+* 39	09.800	122	07.900	68	HTASFP	1WSC  -R1	25HX90W 16/34 23.3	Williams	CN12	Williams				CN12	16E	16/34		160	2500	A	40	California	CA	916-473-5600
+* 40	02.331	122	51.844	8000	T	YolaPk-U8   	25 SM Toranchoteh	YLP	YLPK	YLPK8	YolPk8	YolaPkU8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPk U8	YolaPkU
+$MAGNETIC_VARIATION	14.6E
+$RW_L_UNIT	Feet
+$CONTRIBUTION_DATE	27 March 2016
+$LONGITUDE	West
+$LATITUDE	North
+*
+* ==============================================================================
+*
+* The next line defines the contents of columns.  It MUST appear before the first waypoint line
+NUM	NAM	COM	LAT_D	LAT_M	LAT_S	LON_D	LON_M	LON_S	COD	ALT	FRE	RW_D	RW_H	RW_L	RW_S	RW_W	ICAO	COM_12	STX_NAM
+*
+* Starting the waypoints
+*
+1	1WSC-R1	25HX90;  16/34; CTAF 123.3	39	9	48	122	7	54	HSFTAP	68	123.3	 16/34	160	2500	A	40	CN12	25HX90;16/34	1WSC-R1
+2	20-16xtn-U9		39	0	47	122	21	31	T	1100									20-16xtn-U9
+3	3Sisters-U3		39	7	18	122	19	58	TS	1925									3Sisters-U3
+4	7MRanch-E2	38Sx90 Slopes up to SE	38	43	56	122	33	50	TPL	1127		 12/30				38		38Sx90	7MRanch-E2
+5	AlderSpr-U6		39	39	10	122	43	19	T	4550									AlderSpr-U6
+6	Angwn-R2	32HX50  CTAF 123.0	38	34	43	122	26	7	TA	1850	123	 16/34	160	3217	A	50	2O3	32HX50;16/34	Angwn-R2
+7	AntlpVly-R3	30Sx60 15/33	39	8	47	122	21	25	TPA	500		 15/33	150	2384	G	60	4CL3	30Sx60 15/33	AntlpVly-R3
+8	AnthonyPk-U9		39	50	46	122	57	53	T	6954									AnthonyPk-U9
+9	Arbuckle-U4		39	1	2	122	3	27	T	140									Arbuckle-U4
+10	BessaDam-U8		38	30	48	122	6	16	T	500									BessaDam-U8
+11	BealeCassC	NORCAL APP 125.4	39	8	9	121	26	10	TY	110	119.3							NORCAL 125.4	BealeCassC
+12	BearVly-E3	Driveway 19Sx100 7/25	39	6	17	122	25	55	TL	1400								Driveway	BearVly-E3
+13	Benton-R2	24Hx75; 15/33 CTAF 122.8; Rwy Edge Lights	40	34	28	122	24	27	TA	725	122.8	 15/33	150	2420	A	80	O85	24Hx75;15/33	Benton-R2
+14	BlackBute-U9		39	43	36	122	52	21	T	7448									BlackBute-U9
+15	Bowles-R4		39	17	8	121	41	39	TPA	75		 15/33	150	2600	A	50	18CL		Bowles-R4
+16	BessaTwrs-U8		38	39	51	122	11	25	T	3060									BessaTwrs-U8
+17	Buckhorn-U9		40	37	5	122	42	40	T	5080									Buckhorn-U9
+18	Buro1Gap-E4	17Sx90 S of house	39	46	9	122	31	16	TPL	800								S of House	Buro1Gap-E4
+19	Buro2Gap-E4	17Sx90 E of creek; wires across N end	39	45	2	122	31	4	TPL	800								E of Creek	Buro2Gap-E4
+20	Calistoga-U6	Closed airfield W of Trailer park; 16Sx50; 10/28	38	34	44	122	34	24	T	350								Closed AP	Calistoga-U6
+21	CalWrthtn-E3	50Hx60; 12/30; Tanks & trees W end	39	40	33	122	18	40	TPL	325		 12/30	120	5000	A	60		50Hx60;12/30	CalWrthtn-E3
+22	C-Casino-U5	Use nearby fields	38	43	57	122	8	33	T	390								Nearby field	C-Casino-U5
+23	Charter-E5	27Sx80; 17/35; Orchards all around	39	9	48	122	15	49	TPL	150								27Sx80;17/35	Charter-E5
+24	Chico-R2	67HX150  13L/31R 120.0; ATIS119.675; Edge lights	39	47	37	121	51	48	TA	240	121	 13L/31R	131	6724	A	150	KCIC	67HX150;13/31	Chico-R2
+25	Colusa-R2	30Hx60; 13/31; CTAF 122.8	39	10	44	121	59	36	TA	47	122.8	 13/31	134	3035	A	60	O08	30Hx60;13/31	Colusa-R2
+26	Cooks-E3	20Sx70; 17/35; Weeds; Equipment	39	11	27	122	11	58	TPL	100								20Sx70;17/35	Cooks-E3
+27	Corning-R2	27HX50; 17/35; CTAF 123.0	39	56	38	122	10	16	TA	292	123	 17/35	163	2702	A	50	0O4	27HX50;17/35	Corning-R2
+28	CrzyCreek-E3	18Hx200 (Asphalt 20' wide); 10/28	38	46	10	122	34	10	TPL	1000		 10/28	100	2000	A	20		18Hx200;10/28	CrzyCreek-E3
+29	DoubleCrk-R5	30Sx80; 6/24; Slopes up East	40	26	44	121	52	56	TPA	2030		 06/24	60	3000	G	80	CN42	30Sx80; 6/24	DoubleCrk-R5
+30	DeerCreek-R3	3000'x3000 Square pad	39	57	0	121	59	29	TPA	285		 16/34	160	3000	A	3000	CA60	3000'square	DeerCreek-R3
+31	DiamondM-R4	24Sx75; 9/27; Slopes up West	39	34	17	122	36	37	TPA	1300		 09/27	90	2400	G	75	90CL	24Sx75; 9/27	DiamondM-R4
+32	DunniganN-E7	14Sx100; 17/35	38	55	3	121	56	48	TPL	60		 17/35	170	1400	S	100		14Sx100	DunniganN-E7
+33	DunniganS-E7	20Sx30; 17/35; Vineyard surounds; NARROW	38	51	0	121	57	54	T	100		 17/35	170	2000	S	30		20Sx30;17/35	DunniganS-E7
+34	EaglePeak-U8	Between-Yolla/M3	39	58	4	122	44	21	T	6663								Yolla	EaglePeak-U8
+35	ElkCrk1-E9	Overgrown, rutted	39	35	7	122	35	3	T	1050								Overgrown	ElkCrk1-E9
+36	ElkCrk2-E7	25Sx?  6/24 W Of Town; Dirt Road	39	36	12	122	32	47	TPL	770								Dirt Road	ElkCrk2-E7
+37	Esparto-E3	25Hx60; 17/35; 22Sx70; 08/26	38	39	13	122	1	41	TPL	240		 17/35	170	2600		60		17/35; 08/26	Esparto-E3
+38	Ger-I5-U9	I-5 Overpass	40	5	2	122	13	0	T	300								I-5 Overpass	Ger-I5-U9
+39	GoldMine-U9	Center Of Pond	38	52	0	122	26	19	T	2200								Center Of Po	GoldMine-U9
+40	GoRanch-E7	24Sx?; 7/25; Cattle - Crops	38	53	54	122	26	47	TPL	2410		 07/25		2400	S			24Sx?; 7/25;	GoRanch-E7
+41	Grimes-E2	18H60; 12/30; overhead wires along road	39	4	47	121	54	55	TPA	54		 NW/SE	315	1800	A	60	53CN	18H60; 12/30	Grimes-E2
+42	GravlyVly-R4	40Sx200; 1/19; CTAF 122.9; Rough; Slopes up NE	39	27	4	122	57	16	TA	1900	122.9	 01/19	10	4050	V	200	1Q5	40Sx200; 1/1	GravlyVly-R4
+43	GoatMtn-U4		39	15	37	122	42	54	T	6100									GoatMtn-U4
+44	GoatNPass-U6	Pass N Of Goat	39	19	57	122	46	1	T	4500								N of Goat	GoatNPass-U6
+45	GoatSPass-U6	Pass S end of Goat	39	12	50	122	39	3	T	4400								S of Goat	GoatSPass-U6
+46	Guenoc-E5	16Sx90; 11/29	38	44	22	122	31	23	TPL	980		 11/29	110	1600	S	90		16Sx90;11/29	Guenoc-E5
+47	Guinda-E9	Unsafe; Use nearby fields	38	47	59	122	10	49	TP	330								Unsafe	Guinda-E9
+48	Gunersfld-R4	26Hx60; 16/34; CTAF 122.8	39	21	10	122	5	38	TPA	60	122.8	 16/34	160	2570	A	40	71CL	26Hx60; 16/34	Gunersfld-R4
+49	Hayfork-R3	41HX60 ; 7/25; CTAF 122.8; Runway edge lights	40	32	49	123	10	47	TA	2320	122.8	 07/25	70	4100	A	60	F62	41HX60; 7/25	Hayfork-R3
+50	HayPk6399-U7	aka Chancel Peak	40	28	26	122	59	29	T	6399								aka Chancel	HayPk6399-U7
+51	H-HWater-R4	26Sx100; 18/36	40	8	36	123	23	54	TPA	2500		 18/36	180	2600	D	50	45CL	26x100;18/36	H-HWater-R4
+52	HighVly-E3	48Sx100; 8/26; Near Road; Trees along S edge	39	2	57	122	41	34	TPL	1800								48Sx100;8/26	HighVly-E3
+53	Hoberg-E8	32x??; 14/32; CLOSED	38	52	19	122	40	38	T	2080		 14/32						14/32 CLOSED	Hoberg-E8
+54	Hyampon-R3	29HX60; 14/32; CTAF 122.8	40	37	34	123	28	7	TA	1280	122.8	 14/32	140	2980	A	60	H47	29HX60; 14/3	Hyampon-R3
+55	IndianRch-E4	36Sx60; 13/31; Cows Horses Weeds	39	16	9	122	28	50	TPL	1280								36Sx60;13/33	IndianRch-E4
+56	Jonsen-R3	27Sx200; 16/34	39	40	17	121	53	2	TPA	190		 16/34	160	2700	G	60	4CA7	27x200;16/34	Jonsen-R3
+57	Johnsons-E3	43Sx90; 7/25;	38	48	27	122	35	37	TPL	1000								43Sx90; 7/25	Johnsons-E3
+58	Jones-R5	26Hx100; 14/32	39	27	21	121	41	28	TPA	110		 14/32	150	2600	A	30	CL23	26x100;14/32	Jones-R5
+59	Knocti-U3	7.5 SM to Lampson	38	58	29	122	45	57	T	4300									Knocti-U3
+60	LakeCal-R2	30Hx200; 14/32(Asphalt 75' wide)	40	21	40	122	12	57	TPA	610		 14/32	140	3000	A	75	68CA	30x200;14/32	LakeCal-R2
+61	Lampson-R2	36Hx200; (Asphalt 60' wide); 10/28; CTAF 122.8; Rwy edge lights	38	59	25	122	54	0	TA	1380	122.8	 10/28	103	3600	A	60	1O2	36x200;10/28	Lampson-R2
+62	Larrys-E4	17Sx100; 9/27; Slopes up West	38	45	53	122	38	39	TPL	1140		 09/27	90	1000	S	17		17x100: 9/27	Larrys-E4
+63	Lincoln-R2	60Hx100; 15/33; CTAF 123.0; AWOS124.25 Rwy edge lights	38	54	33	121	21	5	TA	120	123	 15/33	151	6001	A	100	KLHM	60x100;15/33	Lincoln-R2
+64	LongVly-E9	36Sx90; 11/29; Cultvtd fieldsOverhead wires along N edge of field	39	5	54	122	41	31	TP	1350		 11/19	110					36Sx90;11/29	LongVly-E9
+65	M3-U8		39	56	20	122	46	50	T	6580									M3-U8
+66	M6-U9	9sm to Buro1Gap, Buro2Gap	39	46	17	122	41	4	T	5068								9sm to Buro1	M6-U9
+67	MaxMoller-R9	Weeds Ruts	39	17	14	122	11	22	TPA	85		 17/35	170	1700	A	75	8CL6	Weeds Ruts	MaxMoller-R9
+69	Millers-E4	20SX50; 07/25;Runway edge lights	39	4	32	122	4	56	TPL	80				2000	A	50		20SX50; 07/2	Millers-E4
+70	Montgomry-E2	40Sx50; 15/33; Livestock	39	24	7	122	29	59	TPL	1100		 15/33	150	4000		50		40Sx50; 15/3	Montgomry-E2
+71	Moronis-R7	24Hx60; 16/34	39	6	12	121	51	0	TPA	35		 16/34	160	2400	A	50	92CL	24Hx60; 16/34	Moronis-R7
+72	MtStHelena-U6		38	40	9	122	37	43	T	4200									MtStHelena-U6
+73	Mysterios-R9	35Sx60; 14/32	38	44	27	122	22	2	TPA	1410		 14/32	140	3500	V	30	20CL	35Sx60;14/32	Mysterios-R9
+74	Napa Cnty-R2	59Hx15018/36 (& 06/24); CTAF 118.7; ATIS 124.05; Rwy edge lts.	38	12	35	122	16	42	TA	35	118.7	 18R/36L	186	5930	C	150	KAPC	59Hx15018/36	Napa Cnty-R2
+75	Noltas-U3		39	34	46	122	11	53	T	145						85			Noltas-U3
+76	NutTree-R1	47Hx75; 02/20; CTAF122.7; Rwy edge lts.	38	22	40	121	57	43	TA	110	122.7	 02/20	19	4700	A	75	KVCB	47Hx75;02/20	NutTree-R1
+77	OrlndHg-R2	45HX60; 15/33; CTAF 122.7	39	43	16	122	8	47	TA	215	122.7	 15/33	148	4500	A	60	O37	45HX60; 15/3	OrlndHg-R2
+78	Oroville-R2	60Hx100; 2/20, CTAF 122.8; Runway edge lights	39	29	25	121	37	19	TA	190	122.8	 01/19	17	6020	A	100	KOVE	60Hx100; 2/2	Oroville-R2
+79	PondrSky-E9	Narrow (<40ft); Trees; Not suitable for gliders	40	20	39	121	46	23	TP	3450		 09/27	90	2000	D	100	52CN	not landable	PondrSky-E9
+80	Paradise-R3	30Hx60; 17/35; CTAF 122.8; Slopes up North	39	42	37	121	36	59	TPA	1300	122.8	 17/35	164	3017	A	60	CA92	30Hx60;17/35	Paradise-R3
+81	PVlyN-E3	24Sx50; 08/26; no trees	38	38	6	122	24	10	TPL	640		 06/24	60		S	50		24Sx50;8/26	PVlyN-E3
+82	PopeVly-R3	37Hx60; 10/28	38	36	39	122	23	30	TPA	620		 10/28	100	3700	A	60	05CL	37Hx60;10/28	PopeVly-R3
+83	RedBluff-R2	54HX100; CTAF 123.0: ASOS 120.775: Rwy edge lights	40	9	3	122	15	9	TA	350	123	 15/33	151	5431	A	100	KRBL	54HX100; CTA	RedBluff-R2
+84	Ranchaero-R3	21Hx250; 14/32; Asphalt 30' wide	39	43	11	121	52	14	TPA	170	122.9	 14/32	140	2156	A	30	CL56	21x250;14/32	Ranchaero-R3
+85	Rdg-N-U9		38	53	23	122	17	28	T	2800									Rdg-N-U9
+86	Rdg-S-U9		38	43	48	122	14	38	T	1500									Rdg-S-U9
+87	Redding-R2	70Hx150; 16/34; CTAF 119.8; Rwy edge lights	40	30	35	122	17	41	TA	500	119.8	 16/34	162	7003	A	150	KRDD	70x150;16/34	Redding-R2
+88	Richvale-R3	22Hx100(Asphalt 50' wide; 16/34; ); rwy edge lights	39	29	51	121	46	15	TPA	100		 16/34	160	2220	A	50	07CL	22x100;16/34	Richvale-R3
+89	RioVista-R2	42HX75; 07/25; CTAF 122.725; AWOS 127.075	38	11	37	121	42	21	TA	20	122.7	 07/25	72	4201	A	75	O88	42HX75;07/25	RioVista-R2
+90	RoundVly-R2	36HX60 (Clear width 150'); 10/28; CTAF 122.8; Rwy edge lights	39	47	28	123	16	15	TA	1500	122.8	 10/28	100	3670	A	60	O09	36HX60;10/28	RoundVly-R2
+91	Rogers-R2	50HX100; 16/34; CTAF 122.8; AWOS 118.275	40	16	56	121	14	28	TA	4530	122.8	 16/34	160	5020	A	100	O05	50X100;16/34	Rogers-R2
+92	R-Tehama-R2	37Hx150 (Asphalt 40' wide); 09/27	40	0	55	122	23	29	TPA	550		 09/27	90	3750	T	40	49CN	37x150;09/27	R-Tehama-R2
+93	RumseyGap-U7	N Of Gap	38	55	14	122	18	14	T	2550								N Of Gap	RumseyGap-U7
+94	Ruth-R4	35Hx150; 13/31; CTAF 122.8; Asphalt 50' wide	40	12	42	123	17	52	TA	2800	122.8	 13/31	130	3500	A	50	T42	35x150;13/31	Ruth-R4
+95	SironMtn-u2		39	29	28	122	44	3	T	6500									SironMtn-u2
+96	Sites-E7	Cultivated fields may or may not be landable	39	18	31	122	20	33	TP	300								Fields	Sites-E7
+97	SilverCrk-R9	Weeds, brush; No longer maintained as airfield	40	19	3	123	15	14	TPA	2510		 13/31	130	1500	G	50	41CA	Weeds, brush	SilverCrk-R9
+98	SMFClassC	NORCAL APP 125.4; Heavy jet traffic	38	41	43	121	36	4	T	80	123	 16L/34R	164	8605	C	150	SMF	NORCAL 125.4	SMFClassC
+99	SnowMtn-U5		39	22	42	122	45	36	T	7000									SnowMtn-U5
+100	StJohn-U2		39	25	55	122	41	37	T	6500									StJohn-U2
+101	Stonyford-E6	22Sx80; 16/34; Tree 80' east of centerline near north end	39	21	59	122	33	8	TPL	1230		 16/34	160	2200		80		22Sx80;16/34	Stonyford-E6
+102	Strain-E3	25Hx90; 17/35	39	3	12	122	5	44	TPL	120		 16/34	160	2500		90		25Hx90;17/34	Strain-E3
+103	SutrBts-U5		39	12	21	121	49	14	T	2080									SutrBts-U5
+104	T15-U7		40	12	18	123	0	35	T	7770									T15-U7
+105	T16-U7	24 SM To R-Tehama	40	8	13	122	49	2	T	6730									T16-U7
+106	TrinAlps-U8	Weaverville 15sm S	41	0	16	123	2	13	T	8900								Weavrvl 15sm	TrinAlps-U8
+107	TrinCtr-R5	32Hx150;14/32 CTAF 122.9; AWOS 134.3	40	58	57	122	41	37	TA	2400	122.9	 14/32	140	3215	A	50	O86	32x150;14/32	TrinCtr-R5
+108	TravsAFB-R9	100Hx150; 03/21; CT 120.75	38	15	46	121	55	38	TY	60	119.9	 03L/21R	31	11001	HT	150	KSUU	100x150;03/31	TravsAFB-R9
+109	TreeFarm-U4		39	17	3	122	40	19	TS	4200									TreeFarm-U4
+110	Ukiah-R2	44Hx150; 15/33; CTAF 123.0; ASOS 119.275; Rwy edge lights	39	7	35	123	12	4	TA	615	123	 15/33	151	4423	A	150	KUKI	44x150; 15/33	Ukiah-R2
+111	UnivDavis-R1	31HX50; 17/35; CTAF 123.0; AWOS 119.025; Rwy lights (approx 120' wide)	38	31	53	121	47	11	TA	70	123.1	 17/35	166	3176	A	50	KEDU	31X50;17/35	UnivDavis-R1
+112	VacaPond-U5		38	21	41	122	4	32	T	2000									VacaPond-U5
+113	Vanderfrd-R5		39	5	38	121	43	3	TPA	40		 16/34	160	3220	A	48	CA73		Vanderfrd-R5
+114	Wagner-E5	31Hx80 (treated gravel 35' wide); 14/32; Equipment, weeds	38	52	29	121	42	36	TPA	20		 14/32	140	3100	V	35	CA18	31Hx80;14/32	Wagner-E5
+115	Willits-R2	30Hx100; 16/34; CTAF 122.8; Rwy edge lights	39	27	6	123	22	21	TA	2066	122.8	 16/34	159	2995	A	75	O28	30x100; 16/34	Willits-R2
+116	WillowsG-R2	41Hx100; 16/34; CTAF 122.8; Rwy edge lights	39	31	0	122	13	11	TA	141	122.8	 16/34	161	4125	A	100	KWLW	41x100;16/34	WillowsG-R2
+117	WalkerRdg-U2		39	5	55	122	29	19	TS	3560									WalkerRdg-U2
+118	Woodland-R2	37HX200; 18/36; CTAF 122.8; Rwy edge lights	38	40	27	121	52	19	TA	120	122.8	 18/36	185	3770	A	60	O41	37X200;18/36	Woodland-R2
+119	WeaverVl-R3	30Hx150 (asphalt 50' wide); 18/36; CTAF 122.8; AWOS 120.85	40	44	50	122	55	21	TA	2350	122.8	 18/36	180	2980	A	50	O54	30x150;18/36	WeaverVl-R3
+120	YoloCnty-R2	60Hx200 (asphalt 100' wide); 16/34; AWOS 125.775; Rwy edge lights	38	34	47	121	51	25	TA	100	123	 16/34	164	6000	A	100	KDWA	60x200;16/34	YoloCnty-R2
+121	YollaPk-U8		40	2	20	122	51	51	T	8000									YollaPk-U8
